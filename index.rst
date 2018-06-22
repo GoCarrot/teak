@@ -10,5 +10,5 @@ Teak SDK Documentation
    :maxdepth: 2
    :hidden:
 
-   projects/air/index
-   projects/unity/index
+   projects/air
+   docs/air
