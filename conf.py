@@ -33,13 +33,25 @@ read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [ "breathe" ]
+extensions = [ 'breathe', 'sphinx.ext.intersphinx' ]
 
 breathe_projects = {
     "teak":"_doxygen/xml/",
 }
 
 breathe_default_project = "teak"
+
+# This is used for linking and such so we link to the thing we're building
+rtd_version = os.environ.get('READTHEDOCS_VERSION', 'latest')
+if rtd_version not in ['stable', 'latest']:
+    rtd_version = 'stable'
+
+# Intersphinx
+intersphinx_mapping = {
+  'teak': ('http://teak.readthedocs.io/en/%s/' % rtd_version, None),
+  'unity': ('http://teak-unity.readthedocs.io/en/%s/' % rtd_version, None),
+  'air': ('http://teak-air.readthedocs.io/en/%s/' % rtd_version, None),
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
