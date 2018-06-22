@@ -10,5 +10,5 @@ Teak SDK Documentation
    :maxdepth: 2
    :hidden:
 
-   projects/air
-   docs/air
+   Adobe AIR <https://teak.readthedocs.io/projects/air/en/latest/index.html>
+   Unity <https://teak.readthedocs.io/projects/unity/en/latest/index.html>
