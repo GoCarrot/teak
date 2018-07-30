@@ -14,3 +14,4 @@ Teak SDK Documentation
    Unity <https://teak.readthedocs.io/projects/unity/en/latest/index.html>
    known-issues
    firebase-gcm
+   ios-12-notifications
