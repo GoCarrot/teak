@@ -53,6 +53,27 @@ If a user is prompted to explicitly authorize notifications, and they are sent a
 
 These buttons will perform the described actions if pressed, overwriting the current (authorized) status.
 
+Using Provisional Push Notifications
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:Since: 0.19.0
+
+You can use Provisional Notification functionality, even if you do not use a version of Adobe AIR or Unity which supports the new features, by using methods exposed by the Teak SDK.
+
+.. important:: Please contact your Teak account rep before using this functionality.
+
+These methods will perform the request for Provisional Push Notification authorization on iOS devices running iOS 12 or greater.
+
+These methods will return ``true`` if the device is running iOS 12+, and ``false`` otherwise.
+
+Adobe AIR::
+
+    Teak.instance.registerForProvisionalNotifications()
+
+Unity::
+
+    Teak.Instance.RegisterForProvisionalNotifications()
+
 Notification Stacking
 ---------------------
 In iOS 12, subsequent notifications from the same app will be displayed in an abridged form. Notifications will be stacked in the order they were received, with the most recent notification always be displayed at the top of the stack.
