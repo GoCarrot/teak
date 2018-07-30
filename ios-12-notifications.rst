@@ -3,13 +3,17 @@ iOS 12 Notification Features
 ============================
 iOS 12 brings several new features to Local and Push Notifications.
 
-.. note:: iOS 12 is still in beta, so there may be changes between when this document was written and the release of iOS 12.
+.. important:: iOS 12 is still in beta, so there may be changes between when this document was written and the release of iOS 12.
 
 Provisional Push Notifications
 ------------------------------
-One of the most exciting new features of iOS 12 is the ability to send notifications on a 'provisional' basis, before explicit permission is given.
+One of the most exciting new features of iOS 12 is the ability to send notifications on a 'provisional' basis.
 
-Provisional notifications are shown only in the Notification Center, but not on the Lock Screen. They also offer the user the opportunity to turn off notifications from the app.
+Provisional push notifications **do not require you to request permissions from the user**!
+
+Provisional notifications are shown only in the Notification Center, but not on the Lock Screen. They also offer the user the opportunity to turn off notifications from the app, or change the notifications to be delivered prominently.
+
+.. note:: If you have any questions about Provisional Push Notifications, contact your Teak account rep.
 
 .. image:: images/ios-12-notification-center.png
     :scale: 25 %
