@@ -30,6 +30,8 @@ What Does 'Deliver Prominently' Mean?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Deliver Prominently means that the notification will show on the Lock Screen, in the Notification Center, and Banners. It will also play a sound and badge the app when it arrives.
 
+In other words, it will work exactly like push notifications have worked before iOS 12.
+
 This is what the Settings look like for notifications delivered prominently.
 
 .. image:: images/ios-12-prominent.png
@@ -38,6 +40,8 @@ This is what the Settings look like for notifications delivered prominently.
 What Does 'Deliver Quietly' Mean?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Deliver Quietly means that the notification will only show up in the Notification Center. The user will not be alerted via sound or vibration when the notification arrives.
+
+In other words, it will work just like a Provisional Notification, except it won't include the 'Keep...' or 'Turn off...' buttons.
 
 This is what the Settings look like for a notification delivered quietly. The differences between 'Deliver Quietly' and 'Deliver Prominently' are circled.
 
