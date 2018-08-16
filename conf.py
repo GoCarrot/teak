@@ -51,6 +51,7 @@ intersphinx_mapping = {
   'teak': ('http://teak.readthedocs.io/en/%s/' % rtd_version, None),
   'unity': ('http://teak-unity.readthedocs.io/en/%s/' % rtd_version, None),
   'air': ('http://teak-air.readthedocs.io/en/%s/' % rtd_version, None),
+  'server': ('http://teak-server-api-docs.readthedocs.io/en/%s/' % rtd_version, None)
 }
 
 # Add any paths that contain templates here, relative to this directory.
