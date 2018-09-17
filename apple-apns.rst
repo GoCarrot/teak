@@ -5,6 +5,7 @@ Before you Begin
 ----------------
 
 Before you begin, you will need the following
+
 * A Mac
 * An account on the `Apple Developer Site <https://developers.apple.com>`_ with access to your game
 * An account on `Teak <https://app.teak.io/login>`_ with access to your game
