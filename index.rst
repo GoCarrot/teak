@@ -15,4 +15,5 @@ Teak SDK Documentation
    Server API <https://teak.readthedocs.io/projects/server-api/en/latest/index.html>
    known-issues
    firebase-gcm
+   apple-apns
    ios-12-notifications
