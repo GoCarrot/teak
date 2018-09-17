@@ -1,6 +1,17 @@
 Creating and Uploading your Apple Push Notification Service (APNS) Certificates
 ===============================================================================
 
+Before you Begin
+----------------
+
+Before you begin, you will need the following
+* A Mac
+* An account on the `Apple Developer Site <https://developers.apple.com>`_ with access to your game
+* An account on `Teak <https://app.teak.io/login>`_ with access to your game
+
+Navigating the Apple Developer Site
+-----------------------------------
+
 To create or update your APNS Certificates/p12 start by logging in to the `Apple Developer Site <https://developers.apple.com>`_ and navigating to **Certificates, IDs & Profiles**
 
 .. image:: images/apns-setup/dev-site-landing.png
@@ -21,6 +32,9 @@ After clicking **Create Certificate** the developer site will instruct you to cr
 
 .. image:: images/apns-setup/create-certificate-landing.png
 
+Creating the CSR
+----------------
+
 After launching Keychain Access, select **Keychain Access -> Certificate Assitant -> Request a Certificate From a Certificate Authority...** from the menu bar. This will launch the Certificate Assitant modal.
 
 .. image:: images/apns-setup/keychain-access-menu.png
@@ -28,6 +42,9 @@ After launching Keychain Access, select **Keychain Access -> Certificate Assitan
 In the Certificate Assistant modal enter your work email address for **User Email Address**. Enter an easy to identify unique name for **Common Name**. This name is how Keychain Access will display your private key in its lists. This name is not used for any other purposes. Leave **CA Email Address** blank. Select **Request is: Saved to disk** and then click **Continue**. You will be prompted to select somewhere to save the CSR. We're going to be uploading the file next, so choose somewhere easy to navigate to!
 
 .. image:: images/apns-setup/csr-info.png
+
+Creating the Certificate
+------------------------
 
 Back on the Apple Developer Site, click **Continue** and then upload the CSR you just created. Click **Continue** after uploading the CSR.
 
@@ -38,6 +55,9 @@ After uploading the CSR, the Apple Developer Site will create the certificate an
 .. image:: images/apns-setup/csr-download.png
 
 After downloading the certificate, navigate to it in the finder and double click on it to open it in Keychan Access.
+
+Exporting the p12
+-----------------
 
 .. image:: images/apns-setup/open-in-finder.png
 
@@ -60,6 +80,9 @@ You will be prompted to save the certificate. Ensure that the **File Format** is
 You will be prompted to add a password to protect the exported items. I suggest leaving this blank. If you do enter a password, you will later have to enter the same password into Teak.
 
 .. image:: images/apns-setup/password.png
+
+Uploading to Teak
+-----------------
 
 Now that the p12 is saved, we just have to add it to Teak! In the Teak Dashboard, navigate to **Settings -> Mobile** for your game, and click **Manage APNS Certificates** in the iOS section.
 
