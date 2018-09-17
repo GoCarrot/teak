@@ -55,10 +55,10 @@ After uploading the CSR, the Apple Developer Site will create the certificate an
 
 .. image:: images/apns-setup/csr-download.png
 
-After downloading the certificate, navigate to it in the finder and double click on it to open it in Keychan Access.
-
 Exporting the p12
 -----------------
+
+After downloading the certificate, navigate to it in the finder and double click on it to open it in Keychan Access.
 
 .. image:: images/apns-setup/open-in-finder.png
 
