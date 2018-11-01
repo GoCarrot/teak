@@ -68,7 +68,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Teak'
-copyright = u'2017-2018, GoCarrot Inc'
+copyright = u'2017-2018, Teak.io Inc'
 author = u'Teak'
 
 # The version info for the project you're documenting, acts as replacement for
