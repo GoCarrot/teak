@@ -3,13 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Teak Documentation
-==============
-
 .. include:: teak-docs-common/sidebar-top.rst
 .. include:: teak-docs-common/sidebar.rst
 
-
-You need help.
+.. include:: intro.rst
 
 
