@@ -51,7 +51,7 @@ When would you like to send it?
 
   - **Later**
 
-    Teak will send the notification at a later time, specified by **Send this message on**. By default, Teak will send the message at the given time in **your** timezone. You may instead select "Player's local time" to deliver the message at the given time in the **player's** timezone
+    Teak will send the notification at a later time, specified by **Send this message on**. By default, Teak will send the message at the given time in *your* timezone. You may instead select "Player's local time" to deliver the message at the given time in the *player's* timezone
     
     - **Send to users**
 
