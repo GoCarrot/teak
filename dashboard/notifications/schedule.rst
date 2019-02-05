@@ -41,7 +41,7 @@ Per user, what devices would you like to deliver to?
     Teak will first identify what platforms the Message can be sent to based on if content has been set or not that for that platform. Then Teak will choose the most recently used device per user across all of those platforms, and deliver only to it. This is the default and is recommended for most cases, as it ensures that the user will only receive the Message once, and only on their most recently used device.
   - **All their devices**
 
-    Teak will deliver the Message to all devices for all users. This can result in the same user receiving the same Message at the same time on multiple devices (e.g. on thier iPhone and iPad).
+    Teak will deliver the Message to all devices for all users. This can result in the same user receiving the same Message at the same time on multiple devices (e.g. on their iPhone and iPad).
   - **Custom Device Priority**
 
     You may specify the priority order for platforms which Teak will select. Teak will first try to find the most recently used device for all 1st priority platforms, then all 2nd priority platforms, then all 3rd priority platforms, and will deliver to the first device found. For example, if a user plays on Facebook Canvas and on their iPhone, setting iOS to 1st priority and Facebook to 2nd priority will result in the Message only being sent to the user's iPhone even if the user had more recently plaed on Facebook Canvas
