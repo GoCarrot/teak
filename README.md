@@ -8,3 +8,10 @@ Adding subprojects to this doc project:
 * Add that project to the `teak` project: https://readthedocs.org/dashboard/teak/subprojects/
 * Add that project to the intersphinx_mapping in conf.py
 * Add a link to the sidebar, contained in `index.rst` in this project
+
+Getting started
+* brew install python2
+* pip2 install sphinx sphinx_rtd_theme breathe sphinx-autobuild
+* make livehtml
+
+If make livehtml fails, use make html
