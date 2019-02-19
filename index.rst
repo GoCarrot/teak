@@ -18,3 +18,4 @@ Teak SDK Documentation
    firebase-app-id
    apple-apns
    ios-12-notifications
+   notification-content
