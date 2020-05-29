@@ -22,6 +22,7 @@
 import os
 import subprocess
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
+add_config_value('teak_is_rtd_build', read_the_docs_build, 'env')
 
 
 # -- General configuration ------------------------------------------------
@@ -33,7 +34,7 @@ read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [ 'sphinx.ext.intersphinx' ]
+extensions = [ 'sphinx.ext.intersphinx', 'sphinx.ext.ifconfig' ]
 
 # This is used for linking and such so we link to the thing we're building
 rtd_version = os.environ.get('READTHEDOCS_VERSION', 'latest')
