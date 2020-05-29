@@ -42,10 +42,10 @@ if rtd_version not in ['stable', 'latest']:
 
 # Intersphinx
 intersphinx_mapping = {
-  'teak': ('http://teak.readthedocs.io/en/%s/' % rtd_version, None),
-  'unity': ('http://teak.readthedocs.io/projects/unity/en/%s/' % rtd_version, None),
-  'air': ('http://teak.readthedocs.io/projects/air/en/%s/' % rtd_version, None),
-  'server': ('http://teak.readthedocs.io/projects/server-api/en/%s/' % rtd_version, None)
+  'teak': ('https://teak.readthedocs.io/en/%s/' % rtd_version, None),
+  'unity': ('https://teak.readthedocs.io/projects/unity/en/%s/' % rtd_version, None),
+  'air': ('https://teak.readthedocs.io/projects/air/en/%s/' % rtd_version, None),
+  'server': ('https://teak.readthedocs.io/projects/server-api/en/%s/' % rtd_version, None)
 }
 
 # Add any paths that contain templates here, relative to this directory.
