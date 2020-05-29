@@ -7,5 +7,3 @@
 .. include:: teak-docs-common/sidebar.rst
 
 .. include:: intro.rst
-
-

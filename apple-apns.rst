@@ -17,15 +17,21 @@ To create or update your APNS Certificates/p12 start by logging in to the `Apple
 
 .. image:: images/apns-setup/dev-site-landing.png
 
-In **Certificates, IDs & Profiles** select **App IDs** in the left hand column.
+In **Certificates, IDs & Profiles** select **Identifiers** in the left hand column. Make sure **App IDs** is selected in the dropdown in the upper right.
 
 .. image:: images/apns-setup/app-ids-landing.png
 
-In **App IDs** find the application you need to create or update certificates for. The application will be identified by its name as registered with Apple and by its bundle id. I've found it's easier to look up the app by bundle id. After finding the application, click on it in the list, then scroll down until you see the **Edit** button for the application. Click the **Edit** button.
+In **Identifiers** find the application you need to create or update certificates for. The application will be identified by its name as registered with Apple and by its bundle id. I've found it's easier to look up the app by bundle id. After finding the application, click on it in the list to bring up the configuration page for the App ID.
 
-.. image:: images/apns-setup/edit-app.png
+In the configuration for the App ID, scroll down to **Push Notifications**. Ensure that they are **Enabled** by checking the box in the left column, and then click **Edit** or **Configure**.
 
-In the settings for the App ID, scroll down to **Push Notifications**. Ensure that they are **Enabled**, and then click **Create Certificate** for either Development SSL Certificate or Production SSL Certificate, depending on which you need to update. I've found that it's best to update both at the same time. That keeps expiration times consistent and means you only have to do this once per year instead of twice.
+.. note:: While you're here, check the box by **Associated Domains** too! That's all you need to do here to add support for Teak Links as well.
+
+.. warning:: If you checked any boxes, click **Save** in the top right corner before proceeding. If you create a certificate without clicking **Save** the changes to enable Push Notifications or Associated Domains will not be saved!
+
+.. image:: images/apns-setup/push-notif-config.png
+
+In the Apple Push Notification service SSL Certificates modal, click **Create Certificate** for either Development SSL Certificate or Production SSL Certificate, depending on which you need to update. I've found that it's best to update both at the same time. This keeps expiration times consistent and means you only have to do this once per year instead of twice.
 
 .. image:: images/apns-setup/create-certificate.png
 
