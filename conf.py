@@ -57,7 +57,7 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 # Templating magic for the toctree
-rst_epilog = """
+rst_prolog = """
 .. |air_home| replace:: https://teak.readthedocs.io/projects/air/en/latest
 .. |unity_home| replace:: https://teak.readthedocs.io/projects/unity/en/latest
 .. |server_api_home| replace:: https://teak.readthedocs.io/projects/server-api/en/latest
