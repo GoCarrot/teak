@@ -1,10 +1,8 @@
 .. include:: global.rst
 
 Teak Documentation
-==============
+==================
 
-This section is currently pretty sparse, so if anything is holding you up, don't hesitate to contact me.
+:doc:`users_guide`
 
-Thanks,
-Alex
-alex@teak.io
+:doc:`developer_guide`
