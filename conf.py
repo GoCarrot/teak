@@ -22,8 +22,6 @@
 import os
 import subprocess
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
-add_config_value('teak_is_rtd_build', read_the_docs_build, 'env')
-
 
 # -- General configuration ------------------------------------------------
 
