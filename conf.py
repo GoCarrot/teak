@@ -93,7 +93,7 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
-master_doc = 'index.rst' if read_the_docs_build  else 'index-local.rst'
+master_doc = 'index' if read_the_docs_build  else 'index-local'
 
 # -- Options for HTML output ----------------------------------------------
 
