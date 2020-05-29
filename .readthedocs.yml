@@ -7,3 +7,6 @@ python:
   version: 3.5
   install:
     - requirements: requirements.txt
+
+submodules:
+  include: all
