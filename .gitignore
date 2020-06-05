@@ -3,3 +3,5 @@ _static
 _templates
 .DS_Store
 _doxygen
+_sidebar.rst.inc
+.python-version

@@ -23,6 +23,13 @@ import os
 import subprocess
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
+import importlib
+import sys
+
+sys.path.append('.')
+
+docs_common = importlib.import_module('teak-docs-common')
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -34,18 +41,8 @@ read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 # ones.
 extensions = [ 'sphinx.ext.intersphinx' ]
 
-# This is used for linking and such so we link to the thing we're building
-rtd_version = os.environ.get('READTHEDOCS_VERSION', 'latest')
-if rtd_version not in ['stable', 'latest']:
-    rtd_version = 'latest'
-
 # Intersphinx
-intersphinx_mapping = {
-  'teak': ('https://teak.readthedocs.io/en/%s/' % rtd_version, None),
-  'unity': ('https://teak.readthedocs.io/projects/unity/en/%s/' % rtd_version, None),
-  'air': ('https://teak.readthedocs.io/projects/air/en/%s/' % rtd_version, None),
-  'server': ('https://teak.readthedocs.io/projects/server-api/en/%s/' % rtd_version, None)
-}
+intersphinx_mapping = docs_common.intersphinx_mapping(globals())
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -93,7 +90,7 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
-master_doc = 'index' if read_the_docs_build  else 'index-local'
+master_doc = 'index'
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -187,3 +184,6 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
+# -- Sidebar --------------------------------------------------------------
+
+docs_common.generate_sidebar(globals(), 'teak', './_sidebar.rst.inc')
