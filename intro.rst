@@ -6,8 +6,8 @@ Teak Documentation
 User Guides
 -----------
 
-* :doc:`getting_started`
-* :doc:`tips_and_tricks`
+* :doc:`getting-started`
+* :doc:`tips-and-tricks`
 * :doc:`reference`
 
 Developer Guides
