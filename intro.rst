@@ -3,6 +3,16 @@
 Teak Documentation
 ==================
 
-:doc:`users_guide`
+User Guides
+-----------
 
-:doc:`developer_guide`
+* :doc:`getting_started`
+* :doc:`tips_and_tricks`
+* :doc:`reference`
+
+Developer Guides
+----------------
+
+* :doc:`unity:integration`
+* :doc:`air:integration`
+* :doc:`server:integration`

@@ -1,4 +1,7 @@
 Reference
 =========
 
-Coming soon!
+.. toctree::
+  :maxdepth: 1
+
+  notification-content
