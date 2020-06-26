@@ -1,4 +1,0 @@
-Users Guide
-===========
-
-Coming Soon!
