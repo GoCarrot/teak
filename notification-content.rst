@@ -29,7 +29,7 @@ The banner view of an Android Notification is used in both the toast view, and t
 
 .. admonition:: Banner View Content
 
-    1700x300 **png**, **jpg**, or **mp4**. Only a centered 1300x300 is 'safe' for content.
+    1700x300 **png**, **jpg**, or **mp4**. Only a centered 1100x300 is 'safe' for content.
 
     The recommended size guarantees native resolution display on xxxhdpi screens, if the content is too large it can be cut in half to 850x150.
 
