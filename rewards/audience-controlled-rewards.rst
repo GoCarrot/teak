@@ -8,7 +8,7 @@ Additionally when an ACR Bundle is used for a notification, email, or link, Teak
 
 Creating an Audience Controlled Reward Bundle
 ---------------------------------------------
-All Reward Bundles are automatically ACR Bundles. Initially, the bundle only contains a single audience, the default "Everyone Else" audience which will match all players who did not match any other audience.
+All Reward Bundles are automatically ACR Bundles. Initially, the bundle only contains a single audience, the default "All Other Players" audience which will match all players who did not match any other audience.
 
 .. figure:: ../images/rewards/everyone_else.jpg
    :alt: An ACR Bundle with one reward tier
