@@ -7,3 +7,4 @@ Reference
   notification-metrics
   notification-content
   android-markup
+  rewards/audience-controlled-rewards
