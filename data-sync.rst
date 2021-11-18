@@ -1,13 +1,12 @@
 Data Syncing
 ============
-Teak can provide raw row level data in CSVs in an S3 bucket in near real time for you to consume into your own analytics pipeline. For more information please `contact support <mailto:team@teak.io`_.
+Teak can provide raw row level data in CSVs in an S3 bucket in near real time for you to consume into your own analytics pipeline. For more information please `contact support <mailto:team@teak.io>`_.
 
 Row Format
 ----------
 
-All events provided by the data sync have the following row format, represented as a SQL CREATE TABLE statement
+All events provided by the data sync have the following row format, represented as a SQL CREATE TABLE statement::
 
-.. code-block:: sql
    CREATE TABLE teak_events(
      id BIGINT NOT NULL,
      event_type VARCHAR(255) NOT NULL,
@@ -68,18 +67,18 @@ platform_id
 ^^^^^^^^^^^
 platform_id has different meanings depending on the event type.
 
-notification_send: platform_id will be the base10 string representation of id
-notification_received: platform_id will be the base10 string representation of the id of the corresponding notification_send event
-notification_expanded: platform_id will be the base10 string representation of the id of the corresponding notification_send event
-notification_click: platform_id will be the base10 string representation of the id of the corresponding notification_send event
-click: platform_id will be the base10 string representation of id
-launch: If the launch is attributed to a notification_click or click, platform_id will be the base10 string representation of the corresponding notification_click or click event
-email_block: platform_id will be the base10 string representation of the id of the corresponding notification_send event
-email_bounce: platform_id will be the base10 string representation of the id of the corresponding notification_send event
-email_spam: platform_id will be the base10 string representation of the id of the corresponding notification_send event
-email_unsubscribe: platform_id will be the base10 string representation of the id of the corresponding notification_send event
-null_send: platform_id will be the base10 string representation of id
-purchase: platform_id will be set to the platform's id for the purchase. On Android this will be the order id, on iOS this will be the transaction id from the receipt, on Facebook this will be the id of the corresponding purchase object.
+:notification_send: platform_id will be the base10 string representation of id
+:notification_received: platform_id will be the base10 string representation of the id of the corresponding notification_send event
+:notification_expanded: platform_id will be the base10 string representation of the id of the corresponding notification_send event
+:notification_click: platform_id will be the base10 string representation of the id of the corresponding notification_send event
+:click: platform_id will be the base10 string representation of id
+:launch: If the launch is attributed to a notification_click or click, platform_id will be the base10 string representation of the corresponding notification_click or click event
+:email_block: platform_id will be the base10 string representation of the id of the corresponding notification_send event
+:email_bounce: platform_id will be the base10 string representation of the id of the corresponding notification_send event
+:email_spam: platform_id will be the base10 string representation of the id of the corresponding notification_send event
+:email_unsubscribe: platform_id will be the base10 string representation of the id of the corresponding notification_send event
+:null_send: platform_id will be the base10 string representation of id
+:purchase: platform_id will be set to the platform's id for the purchase. On Android this will be the order id, on iOS this will be the transaction id from the receipt, on Facebook this will be the id of the corresponding purchase object.
 
 audience_id
 ^^^^^^^^^^^
