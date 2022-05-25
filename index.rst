@@ -3,6 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. include:: _sidebar.rst.inc
+:toctree:
 
-.. include:: intro.rst
+Teak Documentation has Moved
+============================
+
+Teak documentation now lives at https://docs.teak.io
+
+.. raw:: html
+
+    <script>
+       setTimeout(function(){
+            window.location.href = 'https://docs.teak.io/';
+       }, 3000);
+    </script>

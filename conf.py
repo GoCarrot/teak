@@ -30,8 +30,6 @@ today = date.today()
 
 sys.path.append('.')
 
-docs_common = importlib.import_module('teak-docs-common')
-
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -41,10 +39,7 @@ docs_common = importlib.import_module('teak-docs-common')
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [ 'sphinx.ext.intersphinx' ]
-
-# Intersphinx
-intersphinx_mapping = docs_common.intersphinx_mapping(globals())
+extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -187,7 +182,3 @@ texinfo_documents = [
      author, 'Teak', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-# -- Sidebar --------------------------------------------------------------
-
-docs_common.generate_sidebar(globals(), 'teak', './_sidebar.rst.inc')
